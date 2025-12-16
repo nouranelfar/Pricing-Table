@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover the plan that unlocks the transformative power of digital art and join our vibrant community today">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+      <title>Pricing Table | devChallenges.io</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Be Vietnam Pro", "Poppins" ,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /*header styles*/
+      header{
+        width: 100%;
+        background: url("resources/bg-pattern.png"), #F8FAFC;
+        text-align: center;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: #E5E7EB solid 1px;
+      }
+      header h1{
+        line-height: 1.6;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      header p{
+        color: #4D5562;
+        width: 360px;
+        align-self: center;
+        font-size: 16px;
+      }
+      /*table styles*/
+      table{
+        width: 370px;
+        margin: 20px 10px;
+        border-collapse:collapse;
+        border-radius: 12px;
+        table-layout: fixed;
+      }
+      thead tr{
+        border: none;
+      }
+      #first_cell{
+        background-color: #FFFFFF;
+      }
+      td,th{
+        width: 130px;
+        height: 45px;
+        padding: 10px 15px;
+        text-align: center;
+      }
+      span{
+        color: #4D5562;
+      }
+      .column1{
+        background-color: #F8FAFC;
+      }
+      td:nth-child(1),th:nth-child(1){
+        width: 110px;
+        /*replacing text with dots... */
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .column4{
+        background-color: #121826;
+      }
+      td:nth-child(4),th:nth-child(4){
+        color: #FFFFFF;
+      }
+      main{
+        padding: 1px; 
+      }
+      .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #263FA9;
+        text-decoration: none;
+      }
+      .link img{
+        animation: move 0.9s infinite;
+        animation-play-state: paused;
+        transition: 0.3s ease-in-out;
+      }
+      .link:hover img{
+        animation-play-state: running;
+      }
+      /*animation*/
+      @keyframes move{
+        0%{
+          transform: translateX(0);
+        }
+        100%{
+          transform: translateX(10px);
+        }
+      }
+
+      .Popular-link{
+        color: #FFFFFF;
+      }
+
+      .column2, .column3{
+        display: none;
+      }
+      td:nth-child(2),th:nth-child(2){
+        display: none;
+      }
+      td:nth-child(3),th:nth-child(3){
+        display: none;
+      }
+
+      .state{
+        color: #263FA9;
+      }
+      .numbers{
+        font-size: 54px;
+        font-weight: 600;
+        padding: 10px 15px;
+      }
+      #popular{
+        background-color: #263FA9;
+        padding: 3px 0;
+        border-radius: 15px;
+        margin-bottom: 2px;
+        width: 90px;
+        justify-self: center;
+      }
+      #popularContainer{
+        border-radius: 15px 15px 0 0;
+      }
+      #popularContainer span{
+        color: #FFFFFF;
+      }
+      tr{
+        border-bottom: #4D556233 solid 1px;
+      }
+      #Website_nom{
+        border-radius: 12px 0 0 0;
+      }
+      #Server_speed{
+        border-radius:0 0 0 12px;
+      }
+      tfoot tr{
+        border-bottom: none;
+      }
+      tfoot tr th{
+        background-color: #FFFFFF;
+      }
+      #Popular-link-container{
+        background-color: #7C4F1E; 
+        border-radius: 0 0 15px 15px;
+      }
+      /*screens from 1024px to 1349px*/
+      @media (min-width: 1024px) and (max-width: 1349px) {
+        header{
+          padding: 30px 0;
+        }
+        header h1{
+          line-height: 1.6;
+          font-size: 32px;
+          margin-bottom: 8px;
+        }
+        header p{
+          color: #4D5562;
+          width: 400px;
+          align-self: center;
+          font-size: 16px;
+          line-height: 1.3;
+        }
+        table{
+          width: 75%;
+          justify-self: center;
+          margin: 50px 0;
+        }
+        .numbers{
+          font-size: 64px;
+        }
+        td:nth-child(1),th:nth-child(1){
+          width: 150px;
+        }
+        .column3{
+          display: table-column;
+        }
+        td:nth-child(3),th:nth-child(3){
+          display: table-cell;
+        }
+        thead tr th{
+          padding: 20px 0;
+        }
+        tfoot tr th , tfoot tr td{
+          padding: 20px 0;
+        }
+      }
+
+      /* wider than 1350px screens*/
+      @media (min-width: 1350px) {
+        header{
+          padding: 30px 0;
+        }
+        header h1{
+          line-height: 1.6;
+          font-size: 32px;
+          margin-bottom: 8px;
+        }
+        header p{
+          color: #4D5562;
+          width: 450px;
+          align-self: center;
+          font-size: 16px;
+          line-height: 1.3;
+        }
+        table{
+          width: 60%;
+          justify-self: center;
+          margin: 50px 0;
+        }
+        .numbers{
+          font-size: 64px;
+        }
+        td:nth-child(1),th:nth-child(1){
+          width: 150px;
+        }
+        .column2, .column3{
+          display: table-column;
+        }
+        td:nth-child(2),th:nth-child(2){
+          display: table-cell;
+        }
+        td:nth-child(3),th:nth-child(3){
+          display: table-cell;
+        }
+        thead tr th{
+          padding: 20px 0;
+        }
+        tfoot tr th , tfoot tr td{
+          padding: 20px 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pricing & Plans</h1>
+      <p>Discover the plan that unlocks the transformative power of digital art and join our vibrant community today.</p>
+    </header>
+    
+    <main>
+      <table>
+
+        <colgroup>
+          <col class="column1">
+          <col class="column2">
+          <col class="column3">
+          <col class="column4">
+          <col class="column5">
+        </colgroup>
+
+        <thead>
+        <tr >
+          <th id="first_cell"></th>
+          <th>
+            <p class="state">Free</p>
+            <p class="numbers">$0</p>
+            <span>Per month</span>
+          </th>
+          <th>
+            <p class="state">Team</p>
+            <p class="numbers">$59</p>
+            <span>Per month</span>
+          </th>
+          <th id="popularContainer">
+            <p id="popular">Popular</p>
+            <p class="numbers">$99</p>
+            <span>Per month</span>
+          </th>
+          <th>
+            <p class="state">Enterprise</p>
+            <p class="numbers">$299</p>
+            <span>Per month</span>
+          </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+          <th id="Website_nom">Website number</th>
+          <td>01</td>
+          <td>10</td>
+          <td>50</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <th>Server storage</th>
+          <td>100 GB</td>
+          <td>500 GB</td>
+          <td>1 TB</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <th>Database</th>
+          <td>-</td>
+          <td>15</td>
+          <td>Unlimited</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <th>Unmetered Bandwidth</th>
+          <td>-</td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+        </tr>
+
+        <tr>
+          <th>SSD Disk</th>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="resources/check.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+        </tr>
+
+        <tr>
+          <th>VCPUS Fontworld</th>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="resources/check.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+        </tr>
+
+        <tr>
+          <th>Worldpress install</th>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="resources/check.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+        </tr>
+
+        <tr>
+          <th class="Server_speed">Server speed</th>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="resources/check.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+          <td><img src="resources/check-1.svg" alt="check" sizes="20x20" width="20" height="20"></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <th></th>
+          <td><a class="link" href="#"><p>Get Started</p><img src="resources/down arrow-1.svg" alt="arrow" sizes="24x24" width="24" height="24"></a></td>
+          <td><a class="link" href="#"><p>Get Started</p><img src="resources/down arrow-1.svg" alt="arrow" sizes="24x24" width="24" height="24"></a></td>
+          <td id="Popular-link-container"><a class="link Popular-link" href="#"><p>Get Started</p><img src="resources/down arrow.svg" alt="arrow" sizes="24x24" width="24" height="24"></a></td>
+          <td><a class="link" href="#"><p>Get Started</p><img src="resources/down arrow-1.svg" alt="arrow" sizes="24x24" width="24" height="24"></a></td>
+        </tr>
+        </tfoot>
+
+      </table>
+    </main>
+  </body>
+</html>
